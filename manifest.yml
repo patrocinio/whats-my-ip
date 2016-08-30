@@ -1,5 +1,8 @@
----
 applications:
-- name:    swift-helloworld
-  random-route: true
-  memory:  128M
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: whats-my-ip
+  host: whats-my-ip
+  disk_quota: 1024M
