@@ -2,7 +2,6 @@ applications:
 - path: .
   memory: 256M
   instances: 1
-  domain: mybluemix.net
-  name: whats-my-ip
-  host: whats-my-ip
+  name: whatsmyip-patro
+  host: whatsmyip-patro
   disk_quota: 1024M

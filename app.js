@@ -52,10 +52,15 @@ Object.keys(ifaces).forEach(function (ifname) {
 app.get("/", function (request, response) {
         console.log ("------ GET ----");
         ips.forEach(function (value, key) {
-                    response.send(key + ": " + value);
+                    response.send(key + ": " + value + "\n");
                     });
 
         });
+
+app.get("/ping", function (request, response) {
+        console.log ("------ PING ----");
+        response.send("ping");
+       });
 
 
 // start server on the specified port and binding host
